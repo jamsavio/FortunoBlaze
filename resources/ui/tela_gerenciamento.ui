@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaEstrategias</class>
+ <widget class="QMainWindow" name="JanelaEstrategias">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Fortuno Blaze</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../assets/Fortuno Blaze Icon.jpg</normaloff>../assets/Fortuno Blaze Icon.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QScrollBar:vertical {
+                               border: none;
+                               background-color: #FFFFFF;
+                               width: 10px;    
+                               margin: 0px 0px 0px 0px;
+                           }
+                           QScrollBar::handle:vertical {
+                               background-color: #725509; 
+                               min-height: 20px;
+                           }
+                           QScrollBar::add-line:vertical {
+                               border: none;
+                               background: none;
+                           }
+                           QScrollBar::sub-line:vertical {
+                               border: none;
+                               background: none;
+                          }
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>380</width>
+     <height>480</height>
+    </size>
+   </property>
+   <widget class="QLabel" name="BackgroundApp">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>380</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>380</width>
+      <height>480</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../assets/gerenciamento/BackgroundApp (1).svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RectangleTop">
+    <property name="geometry">
+     <rect>
+      <x>-8</x>
+      <y>-10</y>
+      <width>391</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../assets/gerenciamento/RectangleTop (1).png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RectangleMiddle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>38</y>
+      <width>361</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../assets/gerenciamento/RectangleMiddle (6).svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonBack">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>430</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assets/gerenciamento/ButtonBack.svg</normaloff>../assets/gerenciamento/ButtonBack.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>190</width>
+      <height>5037</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonNext">
+    <property name="geometry">
+     <rect>
+      <x>189</x>
+      <y>430</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assets/gerenciamento/ButtonNext (1).svg</normaloff>../assets/gerenciamento/ButtonNext (1).svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>190</width>
+      <height>5037</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RectangleMiddleTop">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>55</y>
+      <width>341</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../assets/gerenciamento/Rectangle 1 (1).svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MasanielloButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assets/gerenciamento/Rectangle Masaniello (1).svg</normaloff>../assets/gerenciamento/Rectangle Masaniello (1).svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>164</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MaoFixaButton">
+    <property name="geometry">
+     <rect>
+      <x>188</x>
+      <y>60</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assets/gerenciamento/Rectangle Mão Fixa (1).svg</normaloff>../assets/gerenciamento/Rectangle Mão Fixa (1).svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>164</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupMasanielloBox">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>115</y>
+      <width>291</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 0px;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>261</width>
+       <height>328</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="horizontalSpacing">
+       <number>30</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>20</number>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QLabel" name="operacoesText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Operações</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="operacoesInput">
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="acertosText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Acertos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="acertosInput">
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="riscoCicloText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Risco do ciclo</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="riscoCicloInput">
+        <property name="text">
+         <string>50</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="reiniciarCicloText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Reiniciar ciclo</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QGroupBox" name="groupReiniciarCiclo">
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>137</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="reiniciarCicloLayout">
+          <item>
+           <widget class="QRadioButton" name="reiniciarCicloSimRadio">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>Sim</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="reiniciarCicloNaoRadio">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>Não</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="stopWinText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Stop win</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="stopWinInput">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="stopLossText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Stop loss</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="stopLossInput">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="cobrirBrancoText">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Cobrir o branco</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QGroupBox" name="groupCobrirBrancoBox">
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>137</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="cobrirBrancoLayout">
+          <item>
+           <widget class="QRadioButton" name="cobrirBrancoSimRadio">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>Sim</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="cobrirBrancoNaoRadio">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>Não</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="cobrirBrancoText_2">
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>Tipo de gerenciamento</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QGroupBox" name="tipoGerenciamentoBox">
+        <property name="styleSheet">
+         <string notr="true">height: 16px;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QComboBox" name="tipoGerenciamentoComboBox">
+         <property name="geometry">
+          <rect>
+           <x>-2</x>
+           <y>-9</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>Normal</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Normal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Progressivo</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QGroupBox" name="mostrarPlanilhaBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="LineSeparator">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>430</y>
+      <width>16</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../assets/gerenciamento/SeparatorLine.svg</pixmap>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

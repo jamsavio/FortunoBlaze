@@ -1,7 +1,7 @@
 import requests
 import jwt
 
-url = 'http://localhost:5000/login'
+url = 'http://127.0.0.1:5000/login'
 email = 'xxx@gmail.com'
 
 response = requests.get(url, params={'email': email})

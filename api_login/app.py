@@ -10,7 +10,7 @@ def login():
     # Configurações do MySQL
     config = {
         'user': 'jam',
-        'password': '311080',
+        'password': '',
         'host': 'localhost',
         'database': 'assinaturas'
     }
@@ -29,4 +29,4 @@ def login():
         return jsonify({'message': 'Not found'}), 401
 
 if __name__ == '__main__':
-    app.run(host='142.44.205.20',port=5000, debug=True)
+    app.run(host='127.0.0.1',port=5000, debug=True)
